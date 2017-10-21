@@ -1,15 +1,4 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Friggeri Resume/CV
-% XeLaTeX Template
-% Version 1.0 (5/5/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Adrien Friggeri (adrien@friggeri.net)
-% https://github.com/afriggeri/CV
-%
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
 % License:
@@ -21,62 +10,79 @@
 
 \documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
 
+\usepackage{lipsum}
+\usepackage{graphicx}
+
 \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
 
 \begin{document}
 
-\header{Carlos}{Hernández}{Web Developer} % Your name and current job title/field
+\header{Carlos}{Hernandez}{Software Engineer} % Your name and current job title/field
 
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{aside} % In the aside, each new line forces a line break
-\section{Contacto}
-Ciudad de Guatemala
- (502) 4276-6154
+%\includegraphics[scale=0.1]{dont.jpg}
+\section{Contact}
+Guatemala City
+(502) 4276 6154
 ~
-\href{mailto:vgh.carlos@gmail.com}{vgh.carlos@gmail.com}
+\href{mailto:learnercys@gmail.com}{learnercys@gmail.com}
 \href{https://www.linkedin.com/pub/carlos-hern\%C3\%A1ndez/87/1b1/157}{linkedin}
-%\href{http://learnercys.wordpress.com/}{blog}
 \href{https://github.com/learnercys}{github}
-\section{Idiomas}
-Español
-Inglés Intermedio 
+\section{Language}
+Spanish
+English
 \end{aside}
+
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Experiencia}
+\section{Experience}
 %------------------------------------------------
 \begin{entrylist}
 \entry
-	{2014-presente}
-	{Kipo Inc.}
-	{Ciudad de Guatemala}
-	{\emph{Front-end Developer} \\
-	Coordinar y calendarizar tareas en el desarrollo del Frontend, crear la arquitectura y difinir las tecnologías a usar por proyecto.
+	{2015-present}
+	{Paypal}
+	{Guatemala city}
+	{\emph{Software Engineer} \\
+	Build and develop the projects architecture based in Restful services using NodeJS as the main technology.
 	\begin{itemize}
-		\item Desarrollo de soluciones para la geolocalización en tiempo real usando Google Maps y AngularJS.
-		\item Construcción de datos basados en las librerías D3js y Google Charts.
-		\item Integración con APIs basadas en servicios RESTful.
+		\item Develop processes to handle accounts and Pay bills from the U.S. to multiples countries.
+		\item Develop APIs that allow users to send money to multiples countries.
+	\end{itemize}
+	}
+
+\entry
+	{2014-2015}
+	{Kipo Inc.}
+	{Guatemala city}
+	{\emph{Frontend Developer} \\
+	Managing and scheduling the Frontend development tasks, create the architecture and define the technologies.
+	\begin{itemize}
+		\item Develop solutions for real time geolocation using Google Maps and AngularJS.
+		\item Build solutions to Data-Driven Documents based on D3js and Google Charts Library.
+		\item Integration with APIs based on Restful Services.
 	\end{itemize}
 	
 	}
 	
 \entry
 	{2013--2014}
-	{CLARO}
-	{Ciudad de Guatemala}
-	{\emph{Analista de Sistemas} \\
-	Organizar el desarrollo y soporte para los proyectos pertinentes en el Área Móvil.
+	{Claro CENAM}
+	{Guatemala city}
+	{\emph{System Analyst} \\
+	Driving the development and support for the Mobile Area projects.
 	\begin{itemize}
-		\item Desarrollo de herramientas a nivel regional para el área móvil. 
-		\item Manejo de nuevos requerimientos y soporte de sistemas actuales.
-		\item Administración de servidores y bases de datos.
-		\item Soporte de herramientas.
+		\item Development tools.
+		\item Managing of new requirements and support to the current systems.
+		\item System and Database Administration.
+		\item Processes optimization.
+		
 	\end{itemize}
 	
 	}
@@ -87,88 +93,80 @@ Inglés Intermedio
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Educación}
+\section{Education}
 
 \begin{entrylist}
 %------------------------------------------------
 \entry
-{2011--presente}
-{Ingeniería en Ciencias y Sistemas}
-{Universidad de San Carlos de Guatemala, Ciudad de Guatemala	}
+{2011--2016}
+{Science and System Engineering}
+{Universidad de San Carlos de Guatemala.}
 {}
 %------------------------------------------------
-
+%\entry
+%{2010}
+%{Bachiller {\normalfont en Computación con Orientación Científica}}
+%{Colegio Mario Monteforte Toledo, Retalhuleu}
+%{}
+%------------------------------------------------
 \end{entrylist}
 
 
 %----------------------------------------------------------------------------------------
 %   PROGRAMMING SECTION
 %----------------------------------------------------------------------------------------
-\section{Cualificaciones}
-\textbf{Frontend Developer}
-\begin{itemize}
-	\item HTML5, Canvas, SVG y Jade.
-	\item CSS3, CSS Preprocessors, Bootstrap, Bootstrap Grid System, Boostrap UI, Material Design y Media Queries.
-	\item JavaScript, Prototype, DOM Manipulation, jQuery, CoffeeScript, AngularJS, Polymer y NodeJS.
-	\item Socket.io.
-	\item Google Tools y APIs: Google maps, Analytics y Google Charts.
-	\item Grunt y Gulp.
+\section{Skills}
 
+\textbf{Frontend Developer}
+
+\begin{itemize}
+	\item HTML5, Canvas, SVG and Jade.
+	\item CSS3, CSS Preprocessors, Bootstrap, Bootstrap Grid System, Boostrap UI, Material Design and Media Queries.
+	\item JavaScript, Prototype, DOM Manipulation, jQuery, CoffeeScript, AngularJS, React, Polymer, NodeJS.
+	\item Socket.io
+	\item Google Tools and APIs: Google maps, Analytics, Google Charts.
+	\item Grunt and Gulp.
 \end{itemize}
 
 \textbf{Backend Developer}
-
 \begin{itemize}
-	\item PHP y Laravel.
-	\item Python y Django.
-	\item .NET.
-	\item Servicios RESTful.
-	
+	\item NodeJS with Express, Restify and Hapi.
+	\item SocketIO.
+	\item PHP and Laravel.
+	\item Python and Django.
+	\item RESTful Services.
 \end{itemize}
 
-\textbf{Database Adminitrator}
+\textbf{Database Administrator}
 \begin{itemize}
+	\item MySQL Server.
 	\item Microsoft SQL Server.
-	\item MySQL.
 	\item PL/SQL.
 \end{itemize}
 
 \textbf{General}
 \begin{itemize}
-	\item Sistema de Control de Versiones - Git.
-	\item Sistemas Operativos: Windows, Linux y iOS.
+	\item Version Control - Git, Git-flow and GitHub.
+	\item Operation Systems: Linux, Windows and iOS.
 \end{itemize}
-
-
-
-%----------------------------------------------------------------------------------------
-%	COMMUNICATION SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{intereses}
+\section{Interests}
 
-\textbf{Profesional:} Arquitectura de Software, Inteligencia Artificial, Seguridad y Auditoría Informática. Entusiasta de las nuevas tecnologías de desarrollo. 
+\textbf{Professional:} Software Architecture, Artificial Intelligence, Software Security. Fan to the new technologies and development environments. 
 
-\textbf{Personal:} Internet, leer, música y mi familia.
+\textbf{Personal:} Internet, Chess, Mathematics, Physics, Entomology.
 
 %----------------------------------------------------------------------------------------
-%	REFERENCE SECTION
+%	REFERENCES SECTION
 %----------------------------------------------------------------------------------------
-\section{Referencias}
+\section{References}
 
 \begin{itemize}
-	\item \noindent \textbf{Axel Mayorga Ruballos},  Software Architect en Kipo Inc. \hfill \hfill (502) 4216-9351
-	\item \noindent \textbf{Kevin Eduardo López}, Software Engineer en Viscosity North America\hfill \hfill (502) 3036-2000
+	\item \noindent \textbf{Axel Mayorga Ruballos},  Software Architect at Kipo Inc. \hfill \hfill (502) 4216-9351
+	\item \noindent \textbf{Kevin Eduardo López}, Software Engineer at Viscosity North America\hfill \hfill (502) 3036-2000
 \end{itemize}
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS SECTION
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
-
 \end{document}
